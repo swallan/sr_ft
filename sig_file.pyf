@@ -1,0 +1,47 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module statlibs ! in 
+    interface  ! in :statlibs
+        function ppnd(p,ier) ! in :statlibs:statlib/cmustatlib.f
+            double precision :: p
+            integer :: ier
+            double precision :: ppnd
+        end function ppnd
+        function alnorm(x,upper) ! in :statlibs:statlib/cmustatlib.f
+            double precision :: x
+            logical :: upper
+            double precision :: alnorm
+        end function alnorm
+        subroutine nprob(z,p,q,pdf) ! in :statlibs:statlib/cmustatlib.f
+            double precision :: z
+            double precision :: p
+            double precision :: q
+            double precision :: pdf
+        end subroutine nprob
+        function prtrng(q,v,r,ifault) ! in :statlibs:statlib/cmustatlib.f
+            double precision :: q
+            double precision :: v
+            double precision :: r
+            integer :: ifault
+            double precision :: prtrng
+        end function prtrng
+        function qtrng(p,v,r,ifault) ! in :statlibs:statlib/cmustatlib.f
+            double precision :: p
+            double precision :: v
+            double precision :: r
+            integer :: ifault
+            double precision :: qtrng
+        end function qtrng
+        function qtrng0(p,v,r,ifault) ! in :statlibs:statlib/cmustatlib.f
+            double precision :: p
+            double precision :: v
+            double precision :: r
+            integer :: ifault
+            double precision :: qtrng0
+        end function qtrng0
+    end interface 
+end python module statlibs
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/

@@ -59,7 +59,11 @@ c     Miller gives his variable b1 the value of
 c       -29.8213557807d0
 c     but in Hill's original variable A4, the final digit was 8, not 7.
 c
-c     With these two corrected constants, the double precision versions of ALNORM and NPROB give identical results (as Hill said they should), except for values beyond Hill's large tail cutoff value of LTONE (or beyond the small tail cutoff of 12.7 that Miller introduced into Adam's routine).  Hill said the cutoff values should be altered for double precision.  I suggest LTONE=8.3 and UTZERO=37.52, which like Hill's original cutoffs merely avoid useless work without limiting the working range.
+c     With these two corrected constants, the double precision versions of ALNORM and NPROB give 
+C     identical results (as Hill said they should), except for values beyond Hill's large tail cutoff 
+C     value of LTONE (or beyond the small tail cutoff of 12.7 that Miller introduced into Adam's routine).
+C     Hill said the cutoff values should be altered for double precision.  I suggest LTONE=8.3 and
+C     UTZERO=37.52, which like Hill's original cutoffs merely avoid useless work without limiting the working range.
 c 
 c     Jerry W. Lewis, PhD,  JWLewis53@verizon.net
 c
