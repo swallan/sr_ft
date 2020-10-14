@@ -1,0 +1,26 @@
+This shar archive provides functions ptukey (cumulative probabilities)
+and qtukey (quantiles), for the studentised range distribution.
+
+After unpacking run the makefile.  This should compile the Fortran code
+to give the object file qprobs.o
+
+Copy ptukey.d & qtukey.d into the .Data/.Help directory, leaving off the .d
+(If this directory does not already exist, you must create it.)
+
+Run S-PLUS and enter
+> source("tukey.q")
+
+ptukey & qtukey use the function load.if.needed to load the compiled
+Fortran code, if it is not already loaded.
+
+The Fortran code was written by Margaret Copenhaver and Professor Burt S.
+Holland, who have given permission to include it here and to
+distribute it.  It is available separately from the `general'
+collection in Statlib.
+
+Permission is given to distribute this code for any non-commercial
+purpose, providing that acknowledgement is given to the authors of the
+Fortran code.
+
+Any comment or inquiry regarding the S functions should be directed to
+John Maindonald (john@maths.marc.cri.nz)
